@@ -3,6 +3,8 @@
 
 /* General */
 
+#site-wrapper { }
+
 /* Typography */
 h1, p {
 	letter-spacing: 1px;
@@ -28,4 +30,15 @@ table:hover {
 /* Forms */
 label {
 	font-size: 20px;
+}
+
+@media (max-width: 480px) {
+	h3, p {
+		text-align: center;
+		margin: 15px auto;
+	}, 
+	label {
+		display: block;
+		margin: 10px auto;
+	}
 }
