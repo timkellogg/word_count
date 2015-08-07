@@ -13,5 +13,3 @@ class String
 		word_count 
 	end
 end
-
-# possible options to ignore punctuation and case 
