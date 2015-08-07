@@ -10,3 +10,6 @@ h1 {
 	color: darkblue;
 }
 
+table:hover {
+	cursor: pointer;
+}
