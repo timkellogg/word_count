@@ -1,5 +1,7 @@
 # Count Word
 
+##### Hosted at: ** https://intense-bayou-7483.herokuapp.com/ ** 
+
 ##### Breaks down word use and optionally looks up phrase occurances 
 
 ## Description
