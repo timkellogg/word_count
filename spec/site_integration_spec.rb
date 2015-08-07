@@ -16,7 +16,7 @@ describe('using the site passing in a word to be counted', { :type => :feature }
 	it('allows the user to enter text and then shows how many times a given word occurs') do 
 		visit('/')
 		fill_in('text', :with => "It's the end of the world!")
-		fill_in('word_to_find', :with => 'the')
+		fill_in('string_to_find', :with => 'the')
 		expect(page).to have_css('highlighted')
 	end
 end
