@@ -2,7 +2,7 @@ require('capybara/rspec')
 require('./app')
 Capybara.app = Sinatra::Application 
 
-describe('using the site without passing in options', { :type => :feature }) do 
+describe('using the site without passing in a word to be counted', { :type => :feature }) do 
 	it('allows the user to enter text and then shows the breakdown of different words used') do 
 		visit('/')
 		fill_in('text', :with => "It's the end of the world!")
