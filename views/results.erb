@@ -2,13 +2,16 @@
 	<h1 class="text-center">This is the results page</h1>
 </div>
 
-<% if !@string_to_find == '' %>
-<div id="found_string" class="row">
-	<p class="lead"><%= @string_to_find %> was found: <%= @num_of_occurances %> time(s).</p>
+<% if @string_to_find %>
+<div id="found_string">
+	<h3 class="text-left">Phrase Lookup:
+	<span class="lead"><mark><%= @string_to_find %></mark> was found: <b><%= @num_of_occurances %></b> time(s).</span>
+	</h3>
 </div>
 <% end %> 
 
 <% if @counted_words %>
+	<h3 class="text-left">Breakdown:</h3>
 	<table class="table table-hover">
 		<tr> 
 			<th>Rank</th>
