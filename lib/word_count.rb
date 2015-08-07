@@ -1,7 +1,7 @@
 class String
 
 	define_method(:word_count) do 
-		words = self.split("")
+		words = self.split(" ")
 
 		word_count = {}
 
