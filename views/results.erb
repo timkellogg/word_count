@@ -2,7 +2,7 @@
 	<h1 class="text-center">This is the results page</h1>
 </div>
 
-<% if @string_to_find %>
+<% unless @string_to_find == "" || @string_to_find == " " %>
 <div id="found_string">
 	<h3 class="text-left">Phrase Lookup:
 	<span class="lead"><mark><%= @string_to_find %></mark> was found: <b><%= @num_of_occurances %></b> time(s).</span>
@@ -12,6 +12,7 @@
 
 <% if @counted_words %>
 	<h3 class="text-left">Breakdown:</h3>
+	<p>Your passage was <%= @total_words %> word(s) long.</p>
 	<table class="table table-hover">
 		<tr> 
 			<th>Rank</th>
