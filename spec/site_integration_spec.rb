@@ -20,3 +20,5 @@ describe('using the site passing in a word to be counted', { :type => :feature }
 		expect(page).to have_css('highlighted')
 	end
 end
+
+# Validation => some text needs to be entered 
