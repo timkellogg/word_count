@@ -8,9 +8,7 @@
 
 Count Word is a Sinatra application that allows users to input text and it will breakdown the frequency, ranking, and percentage of those words used in the passage.  It does not count punctuation but when you pass in a phrase, it will count the seperate characters.  This was thought to be a bonus because the application already generates findings for specific words.  
 
-There's an optional choice for finding a phrase in the text.  If the user wants to find both "Lorem ipsum" in "Lorem ipsum" they can fill out the optional field.
-
-The biggest problem with the project is that it relies on too many dependencies as a result of time pressure.  jQuery and Bootstrap should be taken out and replaced with smaller and more efficient code.  jQuery is only used for 2 lines of code at the moment so that may come later.  Bootstrap is only 
+The biggest problem with the project is that it relies on too many dependencies as a result of time pressure.  jQuery and Bootstrap should be taken out and replaced with smaller and more efficient code.  jQuery is only used for 2 lines of code at the moment so that may come later.  
 
 ## Setup
 
