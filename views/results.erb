@@ -46,20 +46,16 @@
 </div>
 
 <script>
+	// Searches through full-text and finds what words match and then marks them as matched  
 	window.onload = main();
 
-	function main(){ 
-		var i;
-		var string_to_highlight = "<%= @string_to_find %>";
-		var full_text = document.getElementById("full-text").innerHTML;
-
-		full_text.search(string_to_highlight)
+	function main() {
+		var html = $('#full-text').html();
+		$('#full-text').html(html.replace(/<%= @string_to_find %>/g, '<b style="font-size: 16px;">MATCH</b>'));
 	}
-
-		console.log(full_text);
-		console.log(string_to_highlight);
-	};
 </script>
+
+
 
 
 
