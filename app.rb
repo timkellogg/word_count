@@ -8,13 +8,12 @@ get('/') do
 end
 
 get('/results') do 
+	text         				= params.fetch("text")
+	@string_to_find  		= params.fetch("string_to_find")
 
-	text         			= params.fetch("text").word_count()
-	string_to_find   	= params.fetch("string_to_find")
+	@num_of_occurances  = text.find_string(@string_to_find)
 
-	@particular_word  = text.find_string(string_to_find)
-
-	@total_words 			= text.values.inject(&:+)
-	@counted_words  	= text.sort_by {|key, value| value }.reverse()
+	@total_words 				= text.word_count().values.inject(&:+)
+	@counted_words  		= text.word_count().sort_by {|key, value| value }.reverse()
 	erb(:results)
 end

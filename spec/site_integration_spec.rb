@@ -17,7 +17,8 @@ describe('using the site passing in a word to be counted', { :type => :feature }
 		visit('/')
 		fill_in('text', :with => "It's the end of the world!")
 		fill_in('string_to_find', :with => 'the')
-		expect(page).to have_css('highlighted')
+		click_button('submit')
+		expect(page).to have_css('div#found_string')
 	end
 end
 
