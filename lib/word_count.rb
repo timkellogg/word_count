@@ -1,6 +1,7 @@
 class String
 	define_method(:word_count) do 
-		words = self.split(" ")
+
+		words = self.downcase().gsub(/[!.?]/, " ").split(" ")
 		word_count = {}
 		words.each() do |word| 
 			if !word_count.keys().include?(word)
@@ -12,3 +13,5 @@ class String
 		word_count 
 	end
 end
+
+# possible options to ignore punctuation and case 
