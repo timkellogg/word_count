@@ -29,11 +29,37 @@
 		</tr>
 	<% end %>
 	<table>
+
+	<h3 class="text-left">Full Text Findings</h3>
+
+<div id="full-text-container">
+	<p id="full-text" class="text-muted"><%= @text %></p>
+</div>
+
 <% else %>
 	<p>Oh, no! Something went wrong! Try again!</p>
 <% end %>
 
+
 <div class="row text-center">
 	<a class="btn btn-lg btn-primary" href="/">Try Again?</a>
 </div>
+
+<script>
+	window.onload = main();
+
+	function main(){ 
+		var i;
+		var string_to_highlight = "<%= @string_to_find %>";
+		var full_text = document.getElementById("full-text").innerHTML;
+
+		full_text.search(string_to_highlight)
+	}
+
+		console.log(full_text);
+		console.log(string_to_highlight);
+	};
+</script>
+
+
 
