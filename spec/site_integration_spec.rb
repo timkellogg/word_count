@@ -3,6 +3,7 @@ require('./app')
 Capybara.app = Sinatra::Application 
 
 describe('using the site without passing in a word to be counted', { :type => :feature }) do 
+
 	it('allows the user to enter text and then shows the breakdown of different words used') do 
 		visit('/')
 		fill_in('text', :with => "It's the end of the world!")
@@ -22,4 +23,9 @@ describe('using the site passing in a word to be counted', { :type => :feature }
 	end
 end
 
-# Validation => some text needs to be entered 
+describe('using the site without passing in any text', { :type => :feature }) do 
+	it('should throw an error and prevent the user from reaching the results page') do 
+		visit('/results')
+		expect(page).to have_content('Text Analyzer')
+	end
+end

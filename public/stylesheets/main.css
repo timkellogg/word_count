@@ -14,15 +14,6 @@ table:hover {
 	cursor: pointer;
 }
 
-.highlighted = {
-	background-color: lightyellow;
-}
-
-.higlighted:hover {
-	background-color: yellow;
-}
-
 .btn {
 	margin: 25px;
-
 }
