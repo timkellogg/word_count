@@ -7,6 +7,8 @@ get('/') do
 end
 
 get('/results') do 
-	@output = params.fetch("text").word_count().sort_by {|key, value| value }.reverse()
+	text         		= params.fetch("text").word_count()
+	@total_words 		= text.values.inject(&:+)
+	@counted_words  = text.sort_by {|key, value| value }.reverse()
 	erb(:results)
 end

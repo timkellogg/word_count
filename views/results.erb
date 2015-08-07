@@ -1,7 +1,28 @@
-<h1>This is the results page</h1>
+<div class="row">
+	<h1 class="text-center">This is the results page</h1>
+</div>
 
-<% if @output %>
+<div class="row text-center">
+	<a class="btn btn-primary" href="/">Again?</a>
+</div>
 
+<% if @counted_words %>
+	<table class="table table-hover">
+		<tr> 
+			<th>Rank</th>
+			<th>Word</th>
+			<th>Frequency</th>
+			<th>Percentage</th>
+		</tr>
+	<% @counted_words.each_with_index() do |(key, value), index| %>
+		<tr>
+			<td><%= index + 1 %></td>
+			<td><%= key %></td>
+			<td><%= value %></td>
+			<td><%= (value * 100 / @total_words * 100) / 100  %>%</td>
+		</tr>
+	<% end %>
+	<table>
 <% else %>
-
+	<p>Oh, no! Something went wrong! Try again!</p>
 <% end %>
