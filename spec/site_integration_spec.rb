@@ -29,3 +29,10 @@ describe('using the site without passing in any text', { :type => :feature }) do
 		expect(page).to have_content('Text Analyzer')
 	end
 end
+
+describe('using the site with an invalid url', { :type => :feature }) do 
+	it('should render the index page') do 
+		visit('/a;lskdjf;laksjdf;lkajsd;lfkjas;ldfj;alskdfj;laskjf')
+		expect(page).to have_content('Text Analyzer')
+	end
+end

@@ -19,5 +19,8 @@ get('/results') do
 	rescue => e  
 		erb(:index)
 	end 
+end
 
+get('/*') do 
+	erb(:index)
 end
