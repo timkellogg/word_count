@@ -11,8 +11,11 @@
 <% end %> 
 
 <% if @counted_words %>
-	<h3 class="text-left">Breakdown:</h3>
-	<p>Your passage was <%= @total_words %> word(s) long.</p>
+	<h3 class="text-left">Length:
+	<span class="lead">Your passage was <u><%= @total_words %></u> word(s) long.</span>
+	</h3>
+
+	<h2 class="text-center">Breakdown</h2>
 	<table class="table table-hover">
 		<tr> 
 			<th>Rank</th>
@@ -30,7 +33,7 @@
 	<% end %>
 	<table>
 
-	<h3 class="text-left">Full Text Findings</h3>
+	<h3 class="text-left">Full Text Findings:</h3>
 
 <div id="full-text-container">
 	<p id="full-text" class="text-muted"><%= @text %></p>
