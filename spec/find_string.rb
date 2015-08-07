@@ -24,6 +24,6 @@ describe('String#find_string') do
 	end
 
 	it('handles searching for multiple words') do 
-		expect('characters of the'.find_string('characters_of_the')).to(eq(1))
+		expect('characters of the'.find_string('characters of the')).to(eq(1))
 	end
 end
