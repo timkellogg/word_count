@@ -2,10 +2,6 @@
 	<h1 class="text-center">This is the results page</h1>
 </div>
 
-<div class="row text-center">
-	<a class="btn btn-primary" href="/">Again?</a>
-</div>
-
 <% if !@string_to_find == '' %>
 <div id="found_string" class="row">
 	<p class="lead"><%= @string_to_find %> was found: <%= @num_of_occurances %> time(s).</p>
@@ -32,3 +28,8 @@
 <% else %>
 	<p>Oh, no! Something went wrong! Try again!</p>
 <% end %>
+
+<div class="row text-center">
+	<a class="btn btn-lg btn-primary" href="/">Try Again?</a>
+</div>
+

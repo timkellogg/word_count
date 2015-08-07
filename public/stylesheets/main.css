@@ -1,4 +1,9 @@
-/* This is the main stylesheets */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+/* General */
+body {
+	background-color: 'yellow';
+}
 
 /* Typography */
 h1, p {
@@ -6,6 +11,8 @@ h1, p {
 }
 
 h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
 	padding-bottom: 14px;
 	color: darkblue;
 }
@@ -18,4 +25,9 @@ table:hover {
 /* Buttons */
 .btn {
 	margin: 25px;
+}
+
+/* Forms */
+label {
+	font-size: 20px;
 }
