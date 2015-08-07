@@ -1,0 +1,12 @@
+/* This is the main stylesheets */
+
+/* Typography */
+h1, p {
+	letter-spacing: 1px;
+}
+
+h1 {
+	padding-bottom: 14px;
+	color: darkblue;
+}
+
