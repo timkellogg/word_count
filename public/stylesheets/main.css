@@ -10,10 +10,12 @@ h1 {
 	color: darkblue;
 }
 
+/* Table */
 table:hover {
 	cursor: pointer;
 }
 
+/* Buttons */
 .btn {
 	margin: 25px;
 }

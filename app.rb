@@ -4,6 +4,7 @@ require('./lib/find_string')
 require('sinatra/contrib')
 
 get('/') do 
+	@placeholder_text = "Bacon"
 	erb(:index)
 end
 

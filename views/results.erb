@@ -6,7 +6,7 @@
 	<a class="btn btn-primary" href="/">Again?</a>
 </div>
 
-<% if @string_to_find %>
+<% if !@string_to_find == '' %>
 <div id="found_string" class="row">
 	<p class="lead"><%= @string_to_find %> was found: <%= @num_of_occurances %> time(s).</p>
 </div>
