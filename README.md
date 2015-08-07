@@ -27,7 +27,7 @@ There's an optional choice for finding a phrase in the text.  If the user wants 
 ## Technologies Used
 
 * Testing: Rspec/Capybara
-* Server: shotgun/WEBrick
+* Server: Puma
 * Stack: Ruby/Sinatra
 * Gems: listed in Gemfile
 
