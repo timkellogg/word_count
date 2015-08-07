@@ -1,5 +1,6 @@
 require('sinatra')
 require('./lib/word_count')
+require('./lib/find_word')
 require('sinatra/contrib')
 
 get('/') do 

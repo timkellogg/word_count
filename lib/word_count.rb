@@ -1,6 +1,7 @@
 class String
-	define_method(:word_count) do 
 
+	# Finds the frequency of every word in a string  
+	define_method(:word_count) do 
 		words = self.downcase().gsub(/[!.?]/, " ").split(" ")
 		word_count = {}
 		words.each() do |word| 
@@ -13,3 +14,4 @@ class String
 		word_count 
 	end
 end
+
